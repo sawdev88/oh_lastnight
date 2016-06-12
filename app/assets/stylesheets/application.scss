@@ -1,0 +1,153 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+body {
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
+.home_front {
+  margin: 10px 150px;
+}
+
+.nav {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.nav h3 {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.btn-danger {
+  float: left;
+}
+
+.btn {
+  float: right;
+  margin: 10px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+button.btn.btn-danger {
+  float: left;
+  background: #e77e90;
+  border: 1px solid #e77e90;
+}
+
+button.btn.btn-danger:hover {
+  background: #E25E75;
+  border: 1px solid #e25e75;
+}
+
+button.btn.btn-danger:focus {
+  background: #E25E75;
+  border: 1px solid #e25e75;
+}
+
+.well {
+  background: #E25E75;
+  clear: both;
+  font-size: 20px;
+}
+
+.well p {
+  color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.well p:first-of-type {
+  font-size: 24px;
+}
+
+#new_post {
+  background: rgba(173,216,230,.8);
+  border-radius: 20px;
+  padding: 40px 0;
+}
+
+label:first-of-type {
+  margin-left: 30%;
+}
+
+label {
+  font-size: 20px;
+}
+
+input#post_title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  color: #000;
+  width: 80%;
+  height: 40px;
+  font-size: 22px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+}
+
+textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 200px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+}
+
+input {
+  background: none;
+  border: none;
+}
+
+.post_stuffins {
+  clear: both;
+  background: #eee;
+  border-radius: 20px;
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+
+.post_stuffins p {
+  font-size: 18px;
+  color: #444;
+}
+
+.post_stuffins h5 {
+  color: #9cdaee;
+  text-align: right;
+  font-size: 35px;
+}

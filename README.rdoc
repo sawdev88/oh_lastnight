@@ -1,5 +1,6 @@
-OH! Last Night: A social site for people to anonymously share stories. Only 20 stories are shown at a time
+OH! Last Night: Social site for people to anonymously share stories. Only 20 stories are shown at a time
 in desc order.
 
 TODO
 - Add functionality to remove a post by way of vote. Maybe, 3 votes and the post is destroyed.
+- Possibly add a location attr.

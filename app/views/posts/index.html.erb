@@ -18,8 +18,8 @@
         </div>
         <div class="modal-body">
           <%= form_for @post do |f| %>
-          <%= f.text_field :title, :maxlength => 40, placeholder: "Clever title goes here" %> <br>
-          <%= f.text_area :body, :maxlength => 1500, placeholder: "Alright, let's hear it:" %> <br>
+          <%= f.text_field :title, :maxlength => 40, :required => true, placeholder: "Clever title goes here" %> <br>
+          <%= f.text_area :body, :maxlength => 1500, :required => true, placeholder: "Alright, let's hear it:" %> <br>
         </div>
         <div class="modal-footer">
           <button type="button" class="happy btn btn-danger"><%= f.submit "Go on.. Post it" %></button>

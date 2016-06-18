@@ -17,52 +17,60 @@
 
 
 body {
-  background: #f8f8f8;
   overflow-x: hidden;
-}
-
-.home_front {
-  margin: 10px 150px;
-}
-
-.nav {
-  width: 100%;
-  background: #000;
-  color: #fff;
-  text-align: center;
-}
-
-.nav h1 {
-  margin: 0;
-  padding: 20px;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 30px;
-  letter-spacing: 2px;
+  background: url(bear.png) no-repeat center center fixed;
+  background-size: cover;
+  word-wrap: break-word;
 }
 
 .container {
   overflow: hidden;
 }
 
-.btn-danger {
-  float: left;
+.container-fluid {
+  margin: 0;
+  padding: 0;
 }
 
-.btn:first-of-type {
-  float: right;
-  margin: 10px;
-  padding: 10px 45px;
+.home_front {
+  margin: 10px 150px;
+}
+
+.header {
+  width: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, .30);
+  text-align: center;
+  margin-bottom: 68px;
+  padding: 24px;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 72px;
+  letter-spacing: 2px;
+}
+
+.cloud {
+  font-size: 64px;
+  margin-bottom: 32px;
 }
 
 .btn:focus {
   outline: none;
 }
 
+button {
+  width: 50%;
+  font-size: 32px;
+}
+
 button.btn.btn-danger {
-  float: left;
   background: #e77e90;
   border: 1px solid #e77e90;
-  margin: 10px;
+  margin: 15px 0 30px 0;
 }
 
 button.btn.btn-danger:hover {
@@ -79,6 +87,9 @@ button.btn.btn-danger:focus {
   background: #E25E75;
   clear: both;
   font-size: 20px;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
 }
 
 .well p {
@@ -92,9 +103,35 @@ button.btn.btn-danger:focus {
 }
 
 #new_post {
-  background: rgba(173,216,230,.8);
+  background: rgba(51,122,183, .3);
   border-radius: 20px;
   padding: 40px 0;
+}
+
+.modal-body {
+  background: rgba(51,122,183, .1);
+}
+
+.modal-header, .modal-footer {
+  background: rgba(51,122,183, .5);
+  font-size: 24px;
+  text-align: center;
+}
+
+.modal-header:first-of-type {
+  text-align: left;
+}
+
+.close {
+  text-align: right;
+  font-size: 34px;
+}
+
+.happy.btn.btn-danger {
+  border-radius: 5px;
+  width: 80%;
+  margin: 10px;
+  padding: 8px;
 }
 
 label:first-of-type {
@@ -137,15 +174,17 @@ input {
 
 .post_stuffins {
   clear: both;
-  background: #eee;
+  opacity: .9;
+  background: #f0f9ff;
   border-radius: 20px;
-  padding: 10px 30px;
-  margin-top: 10px;
+  padding: 10px 60px;
+  margin-top: 32px;
 }
 
 .post_stuffins p {
   font-size: 18px;
-  color: #444;
+  color: #333;
+  margin-bottom: 0;
 }
 
 .post_stuffins h5 {
@@ -154,11 +193,16 @@ input {
   font-size: 35px;
 }
 
+.time {
+  margin-bottom: 25px
+}
+
 .footer {
   background: #000;
   color: #fff;
   width: 100%;
   margin-bottom: 0;
+  margin-top: 68px;
   text-align: right;
 }
 

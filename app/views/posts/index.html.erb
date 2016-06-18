@@ -1,7 +1,11 @@
-<div class="container">
+<div class="container-fluid">
+<div class="header">
+  <h1>oh! Last Night</h1>
+  <span class=" cloud glyphicon glyphicon-cloud"></span>
+  <br>
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newPost">
-    <span class="glyphicon glyphicon-plus"></span> New Post
+    <span class="glyphicon glyphicon-plus"></span> Create Post
   </button>
 
   <!-- Modal -->
@@ -18,12 +22,15 @@
           <%= f.text_area :body, :maxlength => 1500, placeholder: "Alright, let's hear it:" %> <br>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-warning"><%= f.submit "Go on.. Post it" %></button>
+          <button type="button" class="happy btn btn-danger"><%= f.submit "Go on.. Post it" %></button>
           <% end %>
         </div>
       </div>
     </div>
   </div>
+
+  <br>
+
   <button class="btn btn-danger btn-lg" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="collapseExample">
     <span class="glyphicon glyphicon-question-sign"></span> About
   </button>
@@ -31,13 +38,14 @@
     <div class="well">
       <p>Simple.</p>
       <p>You have up to 1500 characters to tell a story.</p>
-      <p>Walk of shames, monumental achievements, falling down a flight of stairs, whatever ya got.</p>
+      <p>Walk of shame, monumental achievement, falling down a flight of stairs, whatever ya got.</p>
       <p>20 posts are shown at a time then they're deleted.</p>
       <p>There's no usernames or anything like that, dont take this serious.</p>
       <p>Just share, make fun of, relate and/or enjoy.</p>
     </div>
   </div>
-
+</div>
+<div class="container">
   <% @posts.each do |post| %>
     <div class="post_stuffins">
       <h2> - <%= post.title %></h2>
@@ -47,7 +55,7 @@
     </div>
   <% end %>
 </div>
-
+</div>
 
 <div class="footer">
     <h3>O!LN <span>&copy 2016</span></h3>

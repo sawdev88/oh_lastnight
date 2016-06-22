@@ -1,35 +1,21 @@
 <div class="container-fluid">
 <div class="header">
+
   <h1>oh! Last Night</h1>
   <span class=" cloud glyphicon glyphicon-cloud"></span>
   <br>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newPost">
-    <span class="glyphicon glyphicon-plus"></span> Create Post
-  </button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="newPost" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <p class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-plus"></span></p>
-        </div>
-        <div class="modal-body">
-          <%= form_for @post do |f| %>
-          <%= f.text_field :title, :maxlength => 40, :required => true, placeholder: "Clever title goes here" %> <br>
-          <%= f.text_area :body, :maxlength => 1500, :required => true, placeholder: "Alright, let's hear it:" %> <br>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="happy btn btn-danger"><%= f.submit "Go on.. Post it" %></button>
-          <% end %>
-        </div>
-      </div>
+  <button class="btn btn-primary btn-lg" type="button" data-toggle="collapse" data-target="#newPost" aria-expanded="false" aria-controls="collapseExample">
+    <span class="glyphicon glyphicon-plus"></span> Create a post
+  </button>
+  <div class="collapse" id="newPost">
+    <div class="create_new">
+      <%= form_for @post do |f| %>
+      <%= f.text_field :title, :maxlength => 40, :required => true, placeholder: "Clever title goes here" %> <br>
+      <%= f.text_area :body, :maxlength => 1500, :required => true, placeholder: "Alright, let's hear it:" %> <br>
+      <% end %>
     </div>
   </div>
-
-  <br>
 
   <button class="btn btn-danger btn-lg" type="button" data-toggle="collapse" data-target="#about" aria-expanded="false" aria-controls="collapseExample">
     <span class="glyphicon glyphicon-question-sign"></span> About
@@ -45,6 +31,7 @@
     </div>
   </div>
 </div>
+
 <div class="container">
   <% @posts.each do |post| %>
     <div class="post_stuffins">

@@ -13,6 +13,7 @@
         <%= form_for @post do |f| %>
         <%= f.text_field :title, :maxlength => 40, :required => true, placeholder: "Clever title goes here" %> <br>
         <%= f.text_area :body, :maxlength => 1500, :required => true, placeholder: "Alright, let's hear it:" %> <br>
+        <%= f.submit "+ Click to post +" %>
         <% end %>
       </div>
     </div>
